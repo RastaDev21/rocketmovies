@@ -16,6 +16,7 @@ export function Home() {
             justifyContent: "space-between",
             alignItems: "center",
             marginBottom: "20px",
+            marginLeft: "30px",
           }}
         >
           <h1>Meus Filmes</h1>

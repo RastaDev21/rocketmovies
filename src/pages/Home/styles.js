@@ -8,18 +8,12 @@ export const Container = styled.div`
 export const Content = styled.div`
   padding: 62px 124px;
 
-  div {
-    /* background-color: yellow;
-    margin-right: 10px; */
-  }
-
-  h1 {
+  > h1 {
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    /* margin-left: 75px; */
-    /* margin-top: 50px; */
+    margin-left: 100px;
   }
 
   button {
@@ -29,23 +23,24 @@ export const Content = styled.div`
     padding: 32px;
     align-items: center;
     gap: 8px;
-    /* flex-shrink: 0; */
-    /* margin-right: 70px;
-    margin-top: 50px; */
   }
 `;
 export const ScrollableDiv = styled.div`
   overflow-y: scroll;
   height: 712px;
+  height: calc(100vh - 350px);
+  padding: 24px;
 
-  /* Estilizando a barra de rolagem */
-  ::-webkit-scrollbar {
-    width: 10px; /* Largura da barra de rolagem */
+  &::-webkit-scrollbar {
+    width: 10px;
   }
 
-  ::-webkit-scrollbar-thumb {
-    background-color: red; /* Cor do "polegar" da barra */
-    border-radius: 10px; /* Arredondando o polegar */
-    border: 2px solid #555; /* Adicionando borda ao polegar */
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #ff859b;
   }
 `;

@@ -15,12 +15,9 @@ export const Container = styled.div`
   }
 `;
 export const Form = styled.form`
-  /* max-width: 340px; */
   width: 340px;
   height: 336px;
   margin-left: 600px;
-
-  /* margin: 10px auto 50px; */
 
   > div:nth-child(4) {
     margin-top: 24px;

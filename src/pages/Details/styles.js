@@ -12,7 +12,6 @@ export const Container = styled.div`
 
   > main {
     grid-area: content;
-    overflow-y: scroll;
     padding: 64px 0;
   }
 `;
@@ -25,15 +24,22 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
 
-  /* > button:first-child {
-    margin-right: 100px;
-  } */
+  overflow-y: scroll;
 
-  /* > h1 {
-    font-size: 36px;
-    font-weight: 500;
-    padding-top: 64px;
-  } */
+  &::-webkit-scrollbar {
+    width: 50px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #ff859b;
+  }
 
   > p {
     font-size: 16px;
@@ -41,10 +47,7 @@ export const Content = styled.div`
     text-align: justify;
   }
   > h1 {
-    /* width: 368px; */
-    /* height: 47px; */
     display: flex;
-    /* align-items: center; */
     gap: 20px;
     font-size: 36px;
   }

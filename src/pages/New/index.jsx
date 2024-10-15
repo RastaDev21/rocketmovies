@@ -34,7 +34,9 @@ export function New() {
           <h2 style={{ position: "relative", top: "-24px", margin: 0 }}>
             Marcadores
           </h2>
-          <MovieItensContainer style={{ marginBottom: "40px" }}>
+          <MovieItensContainer
+            style={{ marginBottom: "40px", padding: "8px 16px", gap: "8px" }}
+          >
             <MovieItem value="React" />
             <MovieItem isNew placeholder="Novo marcador" />
           </MovieItensContainer>

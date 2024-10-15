@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: center;
 
   background-color: ${({ theme, isNew }) =>
-    isNew ? "transparent" : theme.COLORS.BACKGROUND_400};
+    isNew ? "transparent" : theme.COLORS.BACKGROUND_700};
 
   color: ${({ theme }) => theme.COLORS.PINK};
 
@@ -16,6 +16,7 @@ export const Container = styled.div`
   margin-bottom: 8px;
   border-radius: 10px;
   padding-right: 16px;
+  width: 200px;
 
   > button {
     border: none;
@@ -31,7 +32,7 @@ export const Container = styled.div`
 
   > input {
     height: 56px;
-    width: 200px;
+    width: 100%;
 
     padding: 12px;
 

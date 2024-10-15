@@ -16,8 +16,6 @@ export const Container = styled.header`
 
   padding: 0 80px;
 
-  /* margin: 0 123px 123px 0; */
-
   > h1 {
     display: flex;
     font-size: 24px;
