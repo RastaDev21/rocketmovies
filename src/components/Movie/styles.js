@@ -26,5 +26,19 @@ export const Container = styled.div`
     line-height: normal;
     text-align: justify;
     margin-bottom: 25px;
+
+    white-space: pre-wrap; /* Permite quebras de linha e espaços */
+    word-wrap: break-word; /* Quebra palavras muito longas */
+    overflow-wrap: break-word; /* Quebra palavras longas */
+    max-height: 100px; /* Limita a altura máxima */
+    overflow-y: auto; /* Adiciona barra de rolagem se necessário */
+
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+
+  /* Para navegadores baseados em Webkit (Chrome, Safari) */
+  p::-webkit-scrollbar {
+    display: none;
   }
 `;

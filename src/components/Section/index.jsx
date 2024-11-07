@@ -1,6 +1,17 @@
 import { Container } from "./styles";
 
-export function Section({ title, children }) {
+export function Section({ title, createdAt, children }) {
+  const formattedDate = new Date(createdAt).toLocaleDateString("pt-BR", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  });
+
+  const formattedTime = new Date(createdAt).toLocaleTimeString("pt-BR", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  });
   return (
     <Container>
       <img src="https://github.com/RastaDev21.png" alt="Foto do usuario" />
@@ -26,7 +37,7 @@ export function Section({ title, children }) {
           fill="#FF859B"
         />
       </svg>
-      <strong>23/05/22 às 08:00</strong>
+      <strong>{`${formattedDate} às ${formattedTime}`}</strong>
     </Container>
   );
 }
