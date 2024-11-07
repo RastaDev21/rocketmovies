@@ -3,18 +3,6 @@ import { FaStar } from "react-icons/fa";
 
 import { Container } from "./styles";
 
-// export function Star({rating}) {
-//   return (
-//     <Container>
-//       <FaStar />
-//       <FaStar />
-//       <FaStar />
-//       <FaStar />
-//       <CiStar />
-//     </Container>
-//   );
-// }
-
 export function Star({ rating }) {
   const filledStars = Array.from({ length: rating }, (_, index) => (
     <FaStar key={index} />

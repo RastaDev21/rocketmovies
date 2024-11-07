@@ -13,10 +13,6 @@ export function Home() {
 
   const navigate = useNavigate();
 
-  // function handlePreview(id) {
-  //   navigate(`/details/${id}`);
-  // }
-
   function handleAddMovie() {
     navigate("/new");
   }
